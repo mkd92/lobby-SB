@@ -31,7 +31,7 @@ const SidebarContent = () => {
       <span className="w-full h-px bg-gray-200"></span>
       <SidebarButtons>
         <SideBarButton path="about">About Lobby</SideBarButton>
-        <SideBarButton path="contact_us">Contact Us</SideBarButton>
+        <SideBarButton path="user">Contact Us</SideBarButton>
       </SidebarButtons>
       <span className="w-full h-px bg-gray-200"></span>
       <div className="flex-grow"></div>
