@@ -1,10 +1,15 @@
 import Head from "next/head";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
+import { useSession, useSupabaseClient } from "@supabase/auth-helpers-react";
+import { Auth, ThemeSupa } from "@supabase/auth-ui-react";
+import Account from "../components/Account";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const session = useSession();
+  const supabase = useSupabaseClient();
   return (
     <>
       <Head>
@@ -14,7 +19,16 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>Manikandan</div>
+      <div className="container" style={{ padding: "50px 0 100px 0" }}>
+        {/* <Auth
+            providers={["github"]}
+            supabaseClient={supabase}
+            appearance={{ theme: ThemeSupa }}
+            theme="dark"
+          /> */}
+        {/* <Account session={session} /> */}
+        <div>TODO:// Landing Page</div>
+      </div>
     </>
   );
 }
