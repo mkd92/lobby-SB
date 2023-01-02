@@ -23,7 +23,7 @@ const SidebarContent = () => {
       {session && (
         <SidebarButtons>
           <SideBarButton path="/user/dashboard">Dashboard</SideBarButton>
-          <SideBarButton path="/user/dashboard">Properties</SideBarButton>
+          <SideBarButton path="/user/properties">Properties</SideBarButton>
           <SideBarButton path="/user/dashboard">Units</SideBarButton>
           <SideBarButton path="/user/dashboard">Transactions</SideBarButton>
         </SidebarButtons>
